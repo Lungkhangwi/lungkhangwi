@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head><strong><b>EULER'S THEOREM PROOF</b></strong>
+<body>
+
+<p>Euler's proof is short and depends on the fact that the sum of divisors function σ is multiplicative; that is, if a and b are any two relatively prime integers, then &#963(ab) = &#963(a)&#963(b). For this formula to be valid, the sum of divisors of a number must include the number itself, not just the proper divisors. A number is perfect if and only if its sum of divisors is twice its value.
+
+</p>
+<p>One direction of the theorem (the part already proved by Euclid) immediately follows from the multiplicative property: every Mersenne prime gives rise to an even perfect number. When 2<sup>p</sup> − 1 is prime, &#963 (2<sup>p-1)</sup>(2<sup>p</sup>-1))= &#963(2<sup>p-1</sup>) &#963(2<sup>p</sup>-1. The divisors of 2<sup>p</sup>−1 are 1, 2, 4, 8, ..., 2<sup>p</sup>−1. The sum of these divisors is a geometric series whose sum is 2<sup>p</sup> − 1. Next, since 2<sup>p</sup> − 1 is prime, its only divisors are 1 and itself, so the sum of its divisors is 2<sup>p</sup>.
+
+</p>
+<p>Combining these,
+</br>
+<center>
+	 &#963 (2<sup>p-1</sup>(2<sup>p</sup>-1)) =  &#963(2<sup>p-1</sup>) &#963(2<sup>p</sup>-1) =(2<sup>p</sup>-1)(2<sup>p</sup>) = 2(2<sup>p-1</sup>)(2<sup>p</sup>-1).
+</center>
+Therefore, 2<sup>p−1</sup>(2<sup>p</sup> − 1) is perfect.
+</p>
+<p>In the other direction, suppose that an even perfect number has been given, and partially factor it as 2<sup>k</sup><i>x</i>, where <i>x</i> is odd. For 2<sup>k</sup>x to be perfect, the sum of its divisors must be twice its value:
+
+</p><p>
+<center>2<sup>k+1</sup><i>x</i> =  &#963(2<sup>k</sup><i>x</i>)=(2<sup>k+1</sup> - 1) &#963(x).
+</center>
+</p>
+<p>The odd factor 2<sup>k+1</sup> − 1 on the right side of (∗) is at least 3, and it must divide <i>x</i>, the only odd factor on the left side, so <i>y</i> = <i>x</i>/(2<sup>k+1</sup> − 1) is a proper divisor of <i>x</i>. Dividing both sides of (∗) by the common factor 2<sup>k+1</sup> − 1 and taking into account the known divisors <i>x</i> and <i>y</i> of <i>x</i> gives
+
+</p>
+<p>
+<center>
+	2<sup>k+1</sup><i>y</i> =  &#963(<i>x</i>) = <i>x+y</i>+ other divisors = 2<sup>k+1</sup><i>y</i> + other divisors.
+</center>
+</p>
+<p>
+	For this equality to be true, there can be no other divisors. Therefore, <i>y</i> must be 1, and <i>x</i> must be a prime of the form 2<sup>k+1</sup> − 1.
+</p>
+</body>
+</html>
